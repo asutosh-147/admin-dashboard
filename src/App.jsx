@@ -25,7 +25,8 @@ import {
 import { useStateContext } from "./context/ContextProvider";
 
 function App() {
-  const { activeMenu } = useStateContext();
+  const { activeMenu,themeSettings,setThemeSettings } = useStateContext();
+  console.log(themeSettings);
   return (
     <div>
       <BrowserRouter>
@@ -38,6 +39,7 @@ function App() {
                   borderRadius: 50,
                   backgroundColor: "blue",
                 }}
+                onClick={()=>setThemeSettings(true)}
               >
                 <FiSettings />
               </button>
@@ -62,6 +64,9 @@ function App() {
             <Navbar />
           </div>
           <div>
+            {
+              themeSettings && <ThemeSettings/> 
+            }
             <Routes>
               {/*  */}
               <Route path="/" element={<Ecommerce />} />
