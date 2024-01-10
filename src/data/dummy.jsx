@@ -377,6 +377,7 @@ export const ColorMappingPrimaryYAxis = {
 };
 
 export const FinancialPrimaryXAxis = {
+  title:'Month',
   valueType: "DateTime",
   minimum: new Date("2016, 12, 31"),
   maximum: new Date("2017, 9, 30"),
@@ -3050,7 +3051,7 @@ export const stackedChartData = [
     { x: "Apr", y: 159.9 },
     { x: "May", y: 159.9 },
     { x: "Jun", y: 159.9 },
-    { x: "July", y: 159.9 },
+    { x: "July", y: 209.9 },
   ],
 ];
 

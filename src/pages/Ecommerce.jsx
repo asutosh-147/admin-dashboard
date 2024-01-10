@@ -67,7 +67,7 @@ const Ecommerce = () => {
           <div className="flex justify-between">
             <p className="font-semibold text-xl">Revenue Updates</p>
             <div className="flex items-center gap-4">
-              <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
+              <p className="flex items-center gap-2 text-gray-600 dark:text-gray-200 hover:drop-shadow-xl">
                 <span>
                   <GoDotFill />
                 </span>
@@ -90,13 +90,13 @@ const Ecommerce = () => {
                     23%
                   </span>
                 </p>
-                <p className="text-gray-500 mt-1">Budget</p>
+                <p className="text-gray-500 mt-1 dark:text-gray-400">Revenue</p>
               </div>
               <div className="mt-8">
                 <p>
                   <span className="text-2xl font-semibold">$48,438</span>
                 </p>
-                <p className="text-gray-500 mt-1">Budget</p>
+                <p className="text-gray-500 mt-1 dark:text-gray-400">Budget</p>
               </div>
               <div className="mt-5">
                 <SparkLine
@@ -112,7 +112,7 @@ const Ecommerce = () => {
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor={{currentColor}}
+                  bgColor={currentColor}
                   text={"Download Report"}
                   borderRadius={"10px"}
                 />

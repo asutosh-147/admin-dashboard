@@ -21,7 +21,7 @@ const Sidebar = () => {
     <div className="ml-3 overflow-hidden md:overflow-auto hover:md:overflow-auto pb-10 h-screen">
       {activeMenu && (
         <>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center sticky top-0 bg-white dark:bg-secondary-dark-bg drop-shadow-sm">
             <Link
               to="/"
               onClick={handleCloseSidebar}
