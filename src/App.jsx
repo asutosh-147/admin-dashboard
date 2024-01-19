@@ -46,14 +46,13 @@ function App() {
           </div>
         </div>
         {activeMenu ? (
-          <div className="w-72 dark:bg-secondary-dark-bg fixed z-10 bg-white drop-shadow-xl">
-            <Sidebar />
-          </div>
-        ) : (
-          <div className="w-0 dark:bg-secondary-dark-bg">
-            
-          </div>
-        )}
+            <div className="w-72 fixed z-20 sidebar dark:bg-secondary-dark-bg bg-white ">
+              <Sidebar />
+            </div>
+          ) : (
+            <div className="w-0 dark:bg-secondary-dark-bg">
+            </div>
+          )}
         <div
           className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${
             activeMenu ? "md:ml-72" : "flex-2"
